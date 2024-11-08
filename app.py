@@ -49,7 +49,7 @@ def main():
             descricao, imagem_correspondente = comparar_imagens(uploaded_file, pasta_imagens)
 
             if descricao:
-                st.write(f"A descrição da imagem mais similar é: {descricao}")
+                st.write(f"Com base na imagem enviada a descrição mais detalhada gerada pela IA: {descricao}")
                 st.image(imagem_correspondente, caption="Imagem mais similar encontrada.", use_column_width=True)
             else:
                 st.write("Nenhuma imagem similar encontrada na pasta.")
